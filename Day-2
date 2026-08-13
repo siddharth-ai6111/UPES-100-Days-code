@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main(){
+    int area,perimeter;
+    int length, breadth;
+ printf("enter length");
+ scanf("%d",&length);
+ printf("enter breadth");
+ scanf("%d",breadth);
+ perimeter=2*(length + breadth);
+ area=length * breadth;
+ printf("area: %d,\npermiter: %d",area,perimeter);
+ return 0;   
+}
+
