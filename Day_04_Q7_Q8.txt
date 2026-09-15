@@ -1,0 +1,47 @@
+DAY 4 - BCA SEMESTER 1 C PROGRAMMING
+Q7 and Q8
+
+Q7. Swap Two Numbers Without Using a Third Variable
+
+CODE:
+#include <stdio.h>
+
+int main()
+{
+    int a, b;
+    printf("Enter two numbers: ");
+    scanf("%d %d", &a, &b);
+
+    a = a + b;
+    b = a - b;
+    a = a - b;
+
+    printf("After swapping: a = %d, b = %d\n", a, b);
+    return 0;
+}
+
+OUTPUT:
+Enter two numbers: 10 20
+After swapping: a = 20, b = 10
+
+
+Q8. Sum of First n Natural Numbers
+
+CODE:
+#include <stdio.h>
+
+int main()
+{
+    int n, sum;
+    printf("Enter n: ");
+    scanf("%d", &n);
+
+    sum = n * (n + 1) / 2;
+
+    printf("Sum = %d\n", sum);
+    return 0;
+}
+
+OUTPUT:
+Enter n: 5
+Sum = 15
