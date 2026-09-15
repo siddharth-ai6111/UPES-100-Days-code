@@ -1,0 +1,76 @@
+DAY 31 - BCA Semester 1 C Programming
+Simple Code + Sample Output
+
+Q61. Linear Search in an Array
+------------------------------------------------------------
+CODE:
+#include <stdio.h>
+
+int main() {
+    int a[100], n, i, key, position = -1;
+
+    printf("Enter number of elements: ");
+    scanf("%d", &n);
+
+    printf("Enter elements: ");
+    for (i = 0; i < n; i++)
+        scanf("%d", &a[i]);
+
+    printf("Enter element to search: ");
+    scanf("%d", &key);
+
+    for (i = 0; i < n; i++) {
+        if (a[i] == key) {
+            position = i;
+            break;
+        }
+    }
+
+    if (position != -1)
+        printf("Element found at position %d\n", position + 1);
+    else
+        printf("Element not found\n");
+
+    return 0;
+}
+
+SAMPLE OUTPUT:
+Enter number of elements: 5
+Enter elements: 10 20 30 40 50
+Enter element to search: 30
+Element found at position 3
+
+
+Q62. Reverse an Array without Extra Space
+------------------------------------------------------------
+CODE:
+#include <stdio.h>
+
+int main() {
+    int a[100], n, i, temp;
+
+    printf("Enter number of elements: ");
+    scanf("%d", &n);
+
+    printf("Enter elements: ");
+    for (i = 0; i < n; i++)
+        scanf("%d", &a[i]);
+
+    for (i = 0; i < n / 2; i++) {
+        temp = a[i];
+        a[i] = a[n - 1 - i];
+        a[n - 1 - i] = temp;
+    }
+
+    printf("Reversed Array: ");
+    for (i = 0; i < n; i++)
+        printf("%d ", a[i]);
+
+    printf("\n");
+    return 0;
+}
+
+SAMPLE OUTPUT:
+Enter number of elements: 5
+Enter elements: 1 2 3 4 5
+Reversed Array: 5 4 3 2 1
