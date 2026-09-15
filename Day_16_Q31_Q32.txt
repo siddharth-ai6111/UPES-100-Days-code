@@ -1,0 +1,66 @@
+DAY 16 - BCA Semester 1 C Programming
+Simple Code + Sample Output
+
+Q31. Convert Decimal Number to Binary
+------------------------------------------------------------
+CODE:
+#include <stdio.h>
+
+int main() {
+    int n, digit;
+    long long binary = 0, place = 1;
+
+    printf("Enter a decimal number: ");
+    scanf("%d", &n);
+
+    if (n == 0) {
+        printf("Binary = 0\n");
+        return 0;
+    }
+
+    while (n > 0) {
+        digit = n % 2;
+        binary = binary + digit * place;
+        place = place * 10;
+        n = n / 2;
+    }
+
+    printf("Binary = %lld\n", binary);
+    return 0;
+}
+
+SAMPLE OUTPUT:
+Enter a decimal number: 10
+Binary = 1010
+
+
+Q32. Check Number Palindrome
+------------------------------------------------------------
+CODE:
+#include <stdio.h>
+
+int main() {
+    int n, original, reverse = 0, digit;
+
+    printf("Enter a number: ");
+    scanf("%d", &n);
+
+    original = n;
+
+    while (n != 0) {
+        digit = n % 10;
+        reverse = reverse * 10 + digit;
+        n = n / 10;
+    }
+
+    if (original == reverse)
+        printf("Palindrome Number\n");
+    else
+        printf("Not a Palindrome Number\n");
+
+    return 0;
+}
+
+SAMPLE OUTPUT:
+Enter a number: 1221
+Palindrome Number
