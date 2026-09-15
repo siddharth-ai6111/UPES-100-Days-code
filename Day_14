@@ -1,8 +1,6 @@
-DAY 14 - BCA Semester 1 C Programming
-Simple Code + Sample Output
 
 Q27. Sum of First n Odd Numbers
-------------------------------------------------------------
+
 CODE:
 #include <stdio.h>
 
@@ -27,7 +25,7 @@ Sum = 25
 
 
 Q28. Product of Even Numbers from 1 to n
-------------------------------------------------------------
+
 CODE:
 #include <stdio.h>
 
