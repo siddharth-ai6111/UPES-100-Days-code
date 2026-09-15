@@ -1,0 +1,55 @@
+DAY 14 - BCA Semester 1 C Programming
+Simple Code + Sample Output
+
+Q27. Sum of First n Odd Numbers
+------------------------------------------------------------
+CODE:
+#include <stdio.h>
+
+int main() {
+    int n, i, odd = 1, sum = 0;
+
+    printf("Enter number of terms: ");
+    scanf("%d", &n);
+
+    for (i = 1; i <= n; i++) {
+        sum = sum + odd;
+        odd = odd + 2;
+    }
+
+    printf("Sum = %d\n", sum);
+    return 0;
+}
+
+SAMPLE OUTPUT:
+Enter number of terms: 5
+Sum = 25
+
+
+Q28. Product of Even Numbers from 1 to n
+------------------------------------------------------------
+CODE:
+#include <stdio.h>
+
+int main() {
+    int n, i;
+    long long product = 1;
+
+    printf("Enter n: ");
+    scanf("%d", &n);
+
+    if (n < 2) {
+        printf("No even numbers from 1 to %d\n", n);
+    } else {
+        for (i = 2; i <= n; i = i + 2)
+            product = product * i;
+
+        printf("Product = %lld\n", product);
+    }
+
+    return 0;
+}
+
+SAMPLE OUTPUT:
+Enter n: 8
+Product = 384
