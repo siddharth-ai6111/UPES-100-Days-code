@@ -1,8 +1,6 @@
-DAY 9 - BCA Semester 1 C Programming
-Simple Code + Sample Output
 
 Q17. Find Roots of a Quadratic Equation and Categorize Them
-------------------------------------------------------------
+
 CODE:
 #include <stdio.h>
 #include <math.h>
@@ -47,7 +45,7 @@ Roots = 3.00 and 2.00
 
 
 Q18. Assign Grade from Percentage
-------------------------------------------------------------
+
 CODE:
 #include <stdio.h>
 
