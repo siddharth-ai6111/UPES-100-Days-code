@@ -1,0 +1,86 @@
+DAY 20 - BCA Semester 1 C Programming
+Simple Code + Sample Output
+
+Q39. Find Product of Odd Digits
+------------------------------------------------------------
+CODE:
+#include <stdio.h>
+
+int main() {
+    int n, digit, found = 0;
+    long long product = 1;
+
+    printf("Enter a number: ");
+    scanf("%d", &n);
+
+    if (n < 0) n = -n;
+
+    while (n != 0) {
+        digit = n % 10;
+
+        if (digit % 2 != 0) {
+            product = product * digit;
+            found = 1;
+        }
+
+        n = n / 10;
+    }
+
+    if (found)
+        printf("Product of Odd Digits = %lld\n", product);
+    else
+        printf("No Odd Digits\n");
+
+    return 0;
+}
+
+SAMPLE OUTPUT:
+Enter a number: 12345
+Product of Odd Digits = 15
+
+
+Q40. Find 1's Complement of a Binary Number
+------------------------------------------------------------
+CODE:
+#include <stdio.h>
+
+int main() {
+    long long binary, temp, complement = 0, place = 1;
+    int digit, valid = 1;
+
+    printf("Enter a binary number: ");
+    scanf("%lld", &binary);
+
+    temp = binary;
+
+    if (binary == 0) {
+        printf("1's Complement = 1\n");
+        return 0;
+    }
+
+    while (temp > 0) {
+        digit = temp % 10;
+
+        if (digit != 0 && digit != 1) {
+            valid = 0;
+            break;
+        }
+
+        if (digit == 0)
+            complement = complement + place;
+
+        place = place * 10;
+        temp = temp / 10;
+    }
+
+    if (valid)
+        printf("1's Complement = %lld\n", complement);
+    else
+        printf("Invalid Binary Number\n");
+
+    return 0;
+}
+
+SAMPLE OUTPUT:
+Enter a binary number: 10110
+1's Complement = 1001
