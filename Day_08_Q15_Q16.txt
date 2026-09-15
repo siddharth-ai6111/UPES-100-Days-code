@@ -1,8 +1,6 @@
-DAY 8 - BCA Semester 1 C Programming
-Simple Code + Sample Output
 
 Q15. Check Uppercase, Lowercase, Digit or Special Character
-------------------------------------------------------------
+
 CODE:
 #include <stdio.h>
 
@@ -30,7 +28,7 @@ Digit
 
 
 Q16. Find Largest Among Three Numbers
-------------------------------------------------------------
+
 CODE:
 #include <stdio.h>
 
