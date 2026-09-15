@@ -1,0 +1,72 @@
+DAY 21 - BCA Semester 1 C Programming
+Simple Code + Sample Output
+
+Q41. Swap First and Last Digit of a Number
+------------------------------------------------------------
+CODE:
+#include <stdio.h>
+
+int main() {
+    int n, first, last, temp, power = 1, result;
+
+    printf("Enter a positive number: ");
+    scanf("%d", &n);
+
+    if (n >= 0 && n < 10) {
+        printf("After Swapping = %d\n", n);
+        return 0;
+    }
+
+    if (n < 0) {
+        printf("Please enter a positive number\n");
+        return 0;
+    }
+
+    last = n % 10;
+    temp = n;
+
+    while (temp >= 10) {
+        temp = temp / 10;
+        power = power * 10;
+    }
+
+    first = temp;
+    result = n - first * power - last;
+    result = result + last * power + first;
+
+    printf("After Swapping = %d\n", result);
+    return 0;
+}
+
+SAMPLE OUTPUT:
+Enter a positive number: 12345
+After Swapping = 52341
+
+
+Q42. Check Perfect Number
+------------------------------------------------------------
+CODE:
+#include <stdio.h>
+
+int main() {
+    int n, i, sum = 0;
+
+    printf("Enter a number: ");
+    scanf("%d", &n);
+
+    for (i = 1; i <= n / 2; i++) {
+        if (n % i == 0)
+            sum = sum + i;
+    }
+
+    if (n > 0 && sum == n)
+        printf("Perfect Number\n");
+    else
+        printf("Not a Perfect Number\n");
+
+    return 0;
+}
+
+SAMPLE OUTPUT:
+Enter a number: 28
+Perfect Number
