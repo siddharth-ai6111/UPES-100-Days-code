@@ -1,0 +1,51 @@
+DAY 24 - BCA Semester 1 C Programming
+Simple Code + Sample Output
+
+Q47. Print Increasing Star Triangle
+------------------------------------------------------------
+CODE:
+#include <stdio.h>
+
+int main() {
+    int i, j;
+
+    for (i = 1; i <= 5; i++) {
+        for (j = 1; j <= i; j++)
+            printf("*");
+        printf("\n");
+    }
+
+    return 0;
+}
+
+SAMPLE OUTPUT:
+*
+**
+***
+****
+*****
+
+
+Q48. Print Number Pattern
+------------------------------------------------------------
+CODE:
+#include <stdio.h>
+
+int main() {
+    int i, j;
+
+    for (i = 1; i <= 5; i++) {
+        for (j = 1; j <= i; j++)
+            printf("%d", j);
+        printf("\n");
+    }
+
+    return 0;
+}
+
+SAMPLE OUTPUT:
+1
+12
+123
+1234
+12345
