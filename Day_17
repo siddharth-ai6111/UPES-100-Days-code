@@ -1,8 +1,6 @@
-DAY 17 - BCA Semester 1 C Programming
-Simple Code + Sample Output
 
 Q33. Check Armstrong Number
-------------------------------------------------------------
+
 CODE:
 #include <stdio.h>
 #include <math.h>
@@ -51,7 +49,7 @@ Armstrong Number
 
 
 Q34. Check Prime Number
-------------------------------------------------------------
+
 CODE:
 #include <stdio.h>
 
