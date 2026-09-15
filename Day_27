@@ -1,8 +1,6 @@
-DAY 27 - BCA Semester 1 C Programming
-Simple Code + Sample Output
 
 Q53. Print Diamond-like Star Pattern
-------------------------------------------------------------
+
 CODE:
 #include <stdio.h>
 
@@ -37,7 +35,7 @@ SAMPLE OUTPUT:
 
 
 Q54. Print Centered Diamond Pattern
-------------------------------------------------------------
+
 CODE:
 #include <stdio.h>
 
