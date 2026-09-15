@@ -1,0 +1,86 @@
+DAY 32 - BCA Semester 1 C Programming
+Simple Code + Sample Output
+
+Q63. Merge Two Arrays
+------------------------------------------------------------
+CODE:
+#include <stdio.h>
+
+int main() {
+    int a[50], b[50], c[100];
+    int n1, n2, i;
+
+    printf("Enter size of first array: ");
+    scanf("%d", &n1);
+
+    printf("Enter first array elements: ");
+    for (i = 0; i < n1; i++) {
+        scanf("%d", &a[i]);
+        c[i] = a[i];
+    }
+
+    printf("Enter size of second array: ");
+    scanf("%d", &n2);
+
+    printf("Enter second array elements: ");
+    for (i = 0; i < n2; i++) {
+        scanf("%d", &b[i]);
+        c[n1 + i] = b[i];
+    }
+
+    printf("Merged Array: ");
+    for (i = 0; i < n1 + n2; i++)
+        printf("%d ", c[i]);
+
+    printf("\n");
+    return 0;
+}
+
+SAMPLE OUTPUT:
+Enter size of first array: 3
+Enter first array elements: 1 2 3
+Enter size of second array: 3
+Enter second array elements: 4 5 6
+Merged Array: 1 2 3 4 5 6
+
+
+Q64. Find the Most Frequent Digit in an Integer
+------------------------------------------------------------
+CODE:
+#include <stdio.h>
+
+int main() {
+    long long n;
+    int count[10] = {0};
+    int digit, i, maxDigit = 0;
+
+    printf("Enter an integer: ");
+    scanf("%lld", &n);
+
+    if (n < 0)
+        n = -n;
+
+    if (n == 0)
+        count[0] = 1;
+
+    while (n != 0) {
+        digit = n % 10;
+        count[digit]++;
+        n = n / 10;
+    }
+
+    for (i = 1; i < 10; i++) {
+        if (count[i] > count[maxDigit])
+            maxDigit = i;
+    }
+
+    printf("Most Frequent Digit = %d\n", maxDigit);
+    printf("Occurrences = %d\n", count[maxDigit]);
+
+    return 0;
+}
+
+SAMPLE OUTPUT:
+Enter an integer: 12233345
+Most Frequent Digit = 3
+Occurrences = 3
