@@ -1,0 +1,79 @@
+DAY 36 - BCA Semester 1 C Programming
+Simple Code + Sample Output
+
+Q71. Read and Print a Matrix
+------------------------------------------------------------
+CODE:
+#include <stdio.h>
+
+int main() {
+    int a[10][10], rows, cols, i, j;
+
+    printf("Enter rows and columns: ");
+    scanf("%d %d", &rows, &cols);
+
+    printf("Enter matrix elements:\n");
+    for (i = 0; i < rows; i++) {
+        for (j = 0; j < cols; j++)
+            scanf("%d", &a[i][j]);
+    }
+
+    printf("Matrix:\n");
+    for (i = 0; i < rows; i++) {
+        for (j = 0; j < cols; j++)
+            printf("%d ", a[i][j]);
+        printf("\n");
+    }
+
+    return 0;
+}
+
+SAMPLE OUTPUT:
+Enter rows and columns: 2 3
+Enter matrix elements:
+1 2 3
+4 5 6
+Matrix:
+1 2 3
+4 5 6
+
+
+Q72. Find Sum of All Elements in a Matrix
+------------------------------------------------------------
+CODE:
+#include <stdio.h>
+
+int main() {
+    int a[10][10], rows, cols, i, j, sum = 0;
+
+    printf("Enter rows and columns: ");
+    scanf("%d %d", &rows, &cols);
+
+    printf("Enter matrix elements:\n");
+    for (i = 0; i < rows; i++) {
+        for (j = 0; j < cols; j++) {
+            scanf("%d", &a[i][j]);
+            sum = sum + a[i][j];
+        }
+    }
+
+    printf("Sum of Matrix Elements = %d\n", sum);
+
+    return 0;
+}
+
+SAMPLE OUTPUT:
+Enter rows and columns: 2 2
+Enter matrix elements:
+1 2
+3 4
+Sum of Matrix Elements = 10
+
+============================================================
+END OF Q9-Q72
+============================================================
+
+Note:
+Programs using math.h (Q9, Q17, Q33) may need the math library when
+compiled on some systems, for example:
+gcc filename.c -o filename -lm
