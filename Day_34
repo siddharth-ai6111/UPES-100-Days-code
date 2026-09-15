@@ -1,8 +1,6 @@
-DAY 34 - BCA Semester 1 C Programming
-Simple Code + Sample Output
 
 Q67. Insert an Element at a Given Position
-------------------------------------------------------------
+
 CODE:
 #include <stdio.h>
 
@@ -50,7 +48,7 @@ Array after insertion: 10 20 25 30 40
 
 
 Q68. Delete an Element from an Array
-------------------------------------------------------------
+
 CODE:
 #include <stdio.h>
 
