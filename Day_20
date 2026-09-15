@@ -1,8 +1,6 @@
-DAY 20 - BCA Semester 1 C Programming
-Simple Code + Sample Output
 
 Q39. Find Product of Odd Digits
-------------------------------------------------------------
+
 CODE:
 #include <stdio.h>
 
@@ -40,7 +38,7 @@ Product of Odd Digits = 15
 
 
 Q40. Find 1's Complement of a Binary Number
-------------------------------------------------------------
+
 CODE:
 #include <stdio.h>
 
