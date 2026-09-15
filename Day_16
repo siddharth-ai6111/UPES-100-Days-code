@@ -1,8 +1,6 @@
-DAY 16 - BCA Semester 1 C Programming
-Simple Code + Sample Output
 
 Q31. Convert Decimal Number to Binary
-------------------------------------------------------------
+
 CODE:
 #include <stdio.h>
 
@@ -35,7 +33,7 @@ Binary = 1010
 
 
 Q32. Check Number Palindrome
-------------------------------------------------------------
+
 CODE:
 #include <stdio.h>
 
