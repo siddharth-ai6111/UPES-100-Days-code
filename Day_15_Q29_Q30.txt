@@ -1,0 +1,56 @@
+DAY 15 - BCA Semester 1 C Programming
+Simple Code + Sample Output
+
+Q29. Calculate Factorial
+------------------------------------------------------------
+CODE:
+#include <stdio.h>
+
+int main() {
+    int n, i;
+    unsigned long long fact = 1;
+
+    printf("Enter a non-negative integer: ");
+    scanf("%d", &n);
+
+    if (n < 0) {
+        printf("Factorial is not defined for negative numbers\n");
+    } else {
+        for (i = 1; i <= n; i++)
+            fact = fact * i;
+
+        printf("Factorial = %llu\n", fact);
+    }
+
+    return 0;
+}
+
+SAMPLE OUTPUT:
+Enter a non-negative integer: 5
+Factorial = 120
+
+
+Q30. Reverse a Number
+------------------------------------------------------------
+CODE:
+#include <stdio.h>
+
+int main() {
+    int n, reverse = 0, digit;
+
+    printf("Enter a number: ");
+    scanf("%d", &n);
+
+    while (n != 0) {
+        digit = n % 10;
+        reverse = reverse * 10 + digit;
+        n = n / 10;
+    }
+
+    printf("Reversed Number = %d\n", reverse);
+    return 0;
+}
+
+SAMPLE OUTPUT:
+Enter a number: 12345
+Reversed Number = 54321
