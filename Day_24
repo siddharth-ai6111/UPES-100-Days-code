@@ -1,8 +1,6 @@
-DAY 24 - BCA Semester 1 C Programming
-Simple Code + Sample Output
 
 Q47. Print Increasing Star Triangle
-------------------------------------------------------------
+
 CODE:
 #include <stdio.h>
 
@@ -27,7 +25,7 @@ SAMPLE OUTPUT:
 
 
 Q48. Print Number Pattern
-------------------------------------------------------------
+
 CODE:
 #include <stdio.h>
 
