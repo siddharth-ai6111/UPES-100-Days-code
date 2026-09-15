@@ -1,8 +1,6 @@
-DAY 33 - BCA Semester 1 C Programming
-Simple Code + Sample Output
 
 Q65. Binary Search in a Sorted Array
-------------------------------------------------------------
+
 CODE:
 #include <stdio.h>
 
@@ -52,7 +50,7 @@ Element found at position 4
 
 
 Q66. Insert an Element in a Sorted Array
-------------------------------------------------------------
+
 CODE:
 #include <stdio.h>
 
