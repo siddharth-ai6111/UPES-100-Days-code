@@ -1,8 +1,6 @@
-DAY 28 - BCA Semester 1 C Programming
-Simple Code + Sample Output
 
 Q55. Print All Prime Numbers from 1 to n
-------------------------------------------------------------
+
 CODE:
 #include <stdio.h>
 
@@ -38,7 +36,7 @@ Prime Numbers: 2 3 5 7 11 13 17 19
 
 
 Q56. Read and Print a One-Dimensional Array
-------------------------------------------------------------
+
 CODE:
 #include <stdio.h>
 
