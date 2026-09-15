@@ -1,0 +1,73 @@
+DAY 12 - BCA Semester 1 C Programming
+Simple Code + Sample Output
+
+Q23. Calculate Library Fine
+------------------------------------------------------------
+CODE:
+#include <stdio.h>
+
+int main() {
+    int days;
+    float fine;
+
+    printf("Enter number of late days: ");
+    scanf("%d", &days);
+
+    if (days < 0) {
+        printf("Invalid Days\n");
+    } else if (days == 0) {
+        printf("No Fine\n");
+    } else if (days <= 5) {
+        fine = days * 2;
+        printf("Fine = Rs. %.2f\n", fine);
+    } else if (days <= 10) {
+        fine = 5 * 2 + (days - 5) * 4;
+        printf("Fine = Rs. %.2f\n", fine);
+    } else if (days <= 30) {
+        fine = 5 * 2 + 5 * 4 + (days - 10) * 6;
+        printf("Fine = Rs. %.2f\n", fine);
+    } else {
+        printf("Membership Cancelled\n");
+    }
+
+    return 0;
+}
+
+SAMPLE OUTPUT:
+Enter number of late days: 12
+Fine = Rs. 42.00
+
+
+Q24. Calculate Electricity Bill
+------------------------------------------------------------
+CODE:
+#include <stdio.h>
+
+int main() {
+    int units;
+    float bill;
+
+    printf("Enter units consumed: ");
+    scanf("%d", &units);
+
+    if (units < 0) {
+        printf("Invalid Units\n");
+    } else if (units <= 100) {
+        bill = units * 5;
+    } else if (units <= 200) {
+        bill = 100 * 5 + (units - 100) * 7;
+    } else if (units <= 300) {
+        bill = 100 * 5 + 100 * 7 + (units - 200) * 10;
+    } else {
+        bill = 100 * 5 + 100 * 7 + 100 * 10 + (units - 300) * 12;
+    }
+
+    if (units >= 0)
+        printf("Electricity Bill = Rs. %.2f\n", bill);
+
+    return 0;
+}
+
+SAMPLE OUTPUT:
+Enter units consumed: 250
+Electricity Bill = Rs. 1700.00
