@@ -1,0 +1,55 @@
+DAY 8 - BCA Semester 1 C Programming
+Simple Code + Sample Output
+
+Q15. Check Uppercase, Lowercase, Digit or Special Character
+------------------------------------------------------------
+CODE:
+#include <stdio.h>
+
+int main() {
+    char ch;
+
+    printf("Enter a character: ");
+    scanf(" %c", &ch);
+
+    if (ch >= 'A' && ch <= 'Z')
+        printf("Uppercase Alphabet\n");
+    else if (ch >= 'a' && ch <= 'z')
+        printf("Lowercase Alphabet\n");
+    else if (ch >= '0' && ch <= '9')
+        printf("Digit\n");
+    else
+        printf("Special Character\n");
+
+    return 0;
+}
+
+SAMPLE OUTPUT:
+Enter a character: 7
+Digit
+
+
+Q16. Find Largest Among Three Numbers
+------------------------------------------------------------
+CODE:
+#include <stdio.h>
+
+int main() {
+    int a, b, c;
+
+    printf("Enter three numbers: ");
+    scanf("%d %d %d", &a, &b, &c);
+
+    if (a >= b && a >= c)
+        printf("Largest = %d\n", a);
+    else if (b >= a && b >= c)
+        printf("Largest = %d\n", b);
+    else
+        printf("Largest = %d\n", c);
+
+    return 0;
+}
+
+SAMPLE OUTPUT:
+Enter three numbers: 12 45 30
+Largest = 45
