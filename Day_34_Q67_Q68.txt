@@ -1,0 +1,99 @@
+DAY 34 - BCA Semester 1 C Programming
+Simple Code + Sample Output
+
+Q67. Insert an Element at a Given Position
+------------------------------------------------------------
+CODE:
+#include <stdio.h>
+
+int main() {
+    int a[101], n, i, value, position;
+
+    printf("Enter number of elements: ");
+    scanf("%d", &n);
+
+    printf("Enter elements: ");
+    for (i = 0; i < n; i++)
+        scanf("%d", &a[i]);
+
+    printf("Enter position (1 to %d): ", n + 1);
+    scanf("%d", &position);
+
+    printf("Enter value: ");
+    scanf("%d", &value);
+
+    if (position < 1 || position > n + 1) {
+        printf("Invalid Position\n");
+        return 0;
+    }
+
+    for (i = n; i >= position; i--)
+        a[i] = a[i - 1];
+
+    a[position - 1] = value;
+    n++;
+
+    printf("Array after insertion: ");
+    for (i = 0; i < n; i++)
+        printf("%d ", a[i]);
+
+    printf("\n");
+    return 0;
+}
+
+SAMPLE OUTPUT:
+Enter number of elements: 4
+Enter elements: 10 20 30 40
+Enter position (1 to 5): 3
+Enter value: 25
+Array after insertion: 10 20 25 30 40
+
+
+Q68. Delete an Element from an Array
+------------------------------------------------------------
+CODE:
+#include <stdio.h>
+
+int main() {
+    int a[100], n, i, value, position = -1;
+
+    printf("Enter number of elements: ");
+    scanf("%d", &n);
+
+    printf("Enter elements: ");
+    for (i = 0; i < n; i++)
+        scanf("%d", &a[i]);
+
+    printf("Enter element to delete: ");
+    scanf("%d", &value);
+
+    for (i = 0; i < n; i++) {
+        if (a[i] == value) {
+            position = i;
+            break;
+        }
+    }
+
+    if (position == -1) {
+        printf("Element not found\n");
+    } else {
+        for (i = position; i < n - 1; i++)
+            a[i] = a[i + 1];
+
+        n--;
+
+        printf("Array after deletion: ");
+        for (i = 0; i < n; i++)
+            printf("%d ", a[i]);
+
+        printf("\n");
+    }
+
+    return 0;
+}
+
+SAMPLE OUTPUT:
+Enter number of elements: 5
+Enter elements: 10 20 30 40 50
+Enter element to delete: 30
+Array after deletion: 10 20 40 50
