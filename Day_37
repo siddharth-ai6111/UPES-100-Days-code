@@ -1,12 +1,8 @@
-DAY 37 - 2D ARRAYS
-BCA Semester 1 - C Programming
 
-==================================================
+
 Q73. Find the sum of each row of a matrix and store it in an array.
-==================================================
 
 CODE:
-
 #include <stdio.h>
 
 int main()
@@ -65,9 +61,8 @@ Row 2 = 15
 Row 3 = 24
 
 
-==================================================
+
 Q74. Find the transpose of a matrix.
-==================================================
 
 CODE:
 
