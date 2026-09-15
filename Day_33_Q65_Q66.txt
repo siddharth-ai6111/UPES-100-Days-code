@@ -1,0 +1,99 @@
+DAY 33 - BCA Semester 1 C Programming
+Simple Code + Sample Output
+
+Q65. Binary Search in a Sorted Array
+------------------------------------------------------------
+CODE:
+#include <stdio.h>
+
+int main() {
+    int a[100], n, i, key;
+    int low, high, mid, found = -1;
+
+    printf("Enter number of elements: ");
+    scanf("%d", &n);
+
+    printf("Enter sorted elements: ");
+    for (i = 0; i < n; i++)
+        scanf("%d", &a[i]);
+
+    printf("Enter element to search: ");
+    scanf("%d", &key);
+
+    low = 0;
+    high = n - 1;
+
+    while (low <= high) {
+        mid = (low + high) / 2;
+
+        if (a[mid] == key) {
+            found = mid;
+            break;
+        } else if (key < a[mid]) {
+            high = mid - 1;
+        } else {
+            low = mid + 1;
+        }
+    }
+
+    if (found != -1)
+        printf("Element found at position %d\n", found + 1);
+    else
+        printf("Element not found\n");
+
+    return 0;
+}
+
+SAMPLE OUTPUT:
+Enter number of elements: 5
+Enter sorted elements: 10 20 30 40 50
+Enter element to search: 40
+Element found at position 4
+
+
+Q66. Insert an Element in a Sorted Array
+------------------------------------------------------------
+CODE:
+#include <stdio.h>
+
+int main() {
+    int a[101], n, i, value, position;
+
+    printf("Enter number of elements: ");
+    scanf("%d", &n);
+
+    printf("Enter sorted elements: ");
+    for (i = 0; i < n; i++)
+        scanf("%d", &a[i]);
+
+    printf("Enter element to insert: ");
+    scanf("%d", &value);
+
+    position = n;
+
+    for (i = 0; i < n; i++) {
+        if (value <= a[i]) {
+            position = i;
+            break;
+        }
+    }
+
+    for (i = n; i > position; i--)
+        a[i] = a[i - 1];
+
+    a[position] = value;
+    n++;
+
+    printf("Array after insertion: ");
+    for (i = 0; i < n; i++)
+        printf("%d ", a[i]);
+
+    printf("\n");
+    return 0;
+}
+
+SAMPLE OUTPUT:
+Enter number of elements: 5
+Enter sorted elements: 10 20 30 40 50
+Enter element to insert: 25
+Array after insertion: 10 20 25 30 40 50
