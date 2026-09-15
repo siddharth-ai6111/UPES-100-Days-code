@@ -1,8 +1,6 @@
-DAY 25 - BCA Semester 1 C Programming
-Simple Code + Sample Output
 
 Q49. Print Reverse Starting Number Pattern
-------------------------------------------------------------
+
 CODE:
 #include <stdio.h>
 
@@ -27,7 +25,7 @@ SAMPLE OUTPUT:
 
 
 Q50. Print Right Shifted Decreasing Star Pattern
-------------------------------------------------------------
+
 CODE:
 #include <stdio.h>
 
