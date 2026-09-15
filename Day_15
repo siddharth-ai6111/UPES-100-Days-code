@@ -1,8 +1,6 @@
-DAY 15 - BCA Semester 1 C Programming
-Simple Code + Sample Output
 
 Q29. Calculate Factorial
-------------------------------------------------------------
+
 CODE:
 #include <stdio.h>
 
@@ -31,7 +29,7 @@ Factorial = 120
 
 
 Q30. Reverse a Number
-------------------------------------------------------------
+
 CODE:
 #include <stdio.h>
 
