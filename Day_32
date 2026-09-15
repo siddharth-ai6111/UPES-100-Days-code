@@ -1,8 +1,6 @@
-DAY 32 - BCA Semester 1 C Programming
-Simple Code + Sample Output
 
 Q63. Merge Two Arrays
-------------------------------------------------------------
+
 CODE:
 #include <stdio.h>
 
@@ -45,7 +43,7 @@ Merged Array: 1 2 3 4 5 6
 
 
 Q64. Find the Most Frequent Digit in an Integer
-------------------------------------------------------------
+
 CODE:
 #include <stdio.h>
 
