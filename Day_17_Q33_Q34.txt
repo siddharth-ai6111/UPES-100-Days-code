@@ -1,0 +1,85 @@
+DAY 17 - BCA Semester 1 C Programming
+Simple Code + Sample Output
+
+Q33. Check Armstrong Number
+------------------------------------------------------------
+CODE:
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int n, original, temp, digits = 0, digit, sum = 0;
+
+    printf("Enter a number: ");
+    scanf("%d", &n);
+
+    if (n < 0) {
+        printf("Not an Armstrong Number\n");
+        return 0;
+    }
+
+    original = n;
+    temp = n;
+
+    if (temp == 0)
+        digits = 1;
+    else {
+        while (temp != 0) {
+            digits++;
+            temp = temp / 10;
+        }
+    }
+
+    temp = n;
+    while (temp != 0) {
+        digit = temp % 10;
+        sum = sum + (int)(pow(digit, digits) + 0.5);
+        temp = temp / 10;
+    }
+
+    if (original == sum)
+        printf("Armstrong Number\n");
+    else
+        printf("Not an Armstrong Number\n");
+
+    return 0;
+}
+
+SAMPLE OUTPUT:
+Enter a number: 153
+Armstrong Number
+
+
+Q34. Check Prime Number
+------------------------------------------------------------
+CODE:
+#include <stdio.h>
+
+int main() {
+    int n, i, isPrime = 1;
+
+    printf("Enter a number: ");
+    scanf("%d", &n);
+
+    if (n <= 1)
+        isPrime = 0;
+    else {
+        for (i = 2; i * i <= n; i++) {
+            if (n % i == 0) {
+                isPrime = 0;
+                break;
+            }
+        }
+    }
+
+    if (isPrime)
+        printf("Prime Number\n");
+    else
+        printf("Not a Prime Number\n");
+
+    return 0;
+}
+
+SAMPLE OUTPUT:
+Enter a number: 29
+Prime Number
