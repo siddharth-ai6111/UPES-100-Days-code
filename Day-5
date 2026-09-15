@@ -1,8 +1,5 @@
-DAY 5 - BCA Semester 1 C Programming
-Simple Code + Sample Output
 
 Q9. Calculate Simple and Compound Interest
-------------------------------------------------------------
 CODE:
 #include <stdio.h>
 #include <math.h>
@@ -30,7 +27,7 @@ Compound Interest = 1025.00
 
 
 Q10. Convert Seconds into Hours:Minutes:Seconds
-------------------------------------------------------------
+
 CODE:
 #include <stdio.h>
 
