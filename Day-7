@@ -1,8 +1,6 @@
-DAY 7 - BCA Semester 1 C Programming
-Simple Code + Sample Output
 
 Q13. Check Leap Year
-------------------------------------------------------------
+
 CODE:
 #include <stdio.h>
 
@@ -30,7 +28,7 @@ Leap Year
 
 
 Q14. Check Vowel or Consonant
-------------------------------------------------------------
+
 CODE:
 #include <stdio.h>
 
