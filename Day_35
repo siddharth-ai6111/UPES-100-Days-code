@@ -1,8 +1,6 @@
-DAY 35 - BCA Semester 1 C Programming
-Simple Code + Sample Output
 
 Q69. Find Second Largest Element in an Array
-------------------------------------------------------------
+
 CODE:
 #include <stdio.h>
 
@@ -58,7 +56,7 @@ Second Largest = 40
 
 
 Q70. Rotate an Array Right by k Positions
-------------------------------------------------------------
+
 CODE:
 #include <stdio.h>
 
