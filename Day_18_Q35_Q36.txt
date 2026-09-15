@@ -1,0 +1,56 @@
+DAY 18 - BCA Semester 1 C Programming
+Simple Code + Sample Output
+
+Q35. Print All Factors of a Number
+------------------------------------------------------------
+CODE:
+#include <stdio.h>
+
+int main() {
+    int n, i;
+
+    printf("Enter a positive number: ");
+    scanf("%d", &n);
+
+    printf("Factors: ");
+    for (i = 1; i <= n; i++) {
+        if (n % i == 0)
+            printf("%d ", i);
+    }
+
+    printf("\n");
+    return 0;
+}
+
+SAMPLE OUTPUT:
+Enter a positive number: 12
+Factors: 1 2 3 4 6 12
+
+
+Q36. Find HCF (GCD) of Two Numbers
+------------------------------------------------------------
+CODE:
+#include <stdio.h>
+
+int main() {
+    int a, b, temp;
+
+    printf("Enter two numbers: ");
+    scanf("%d %d", &a, &b);
+
+    if (a < 0) a = -a;
+    if (b < 0) b = -b;
+
+    while (b != 0) {
+        temp = b;
+        b = a % b;
+        a = temp;
+    }
+
+    printf("HCF = %d\n", a);
+    return 0;
+}
+
+SAMPLE OUTPUT:
+Enter two numbers: 24 36
+HCF = 12
