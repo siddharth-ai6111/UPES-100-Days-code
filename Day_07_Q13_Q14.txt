@@ -1,0 +1,54 @@
+DAY 7 - BCA Semester 1 C Programming
+Simple Code + Sample Output
+
+Q13. Check Leap Year
+------------------------------------------------------------
+CODE:
+#include <stdio.h>
+
+int main() {
+    int year;
+
+    printf("Enter year: ");
+    scanf("%d", &year);
+
+    if (year % 400 == 0)
+        printf("Leap Year\n");
+    else if (year % 100 == 0)
+        printf("Not a Leap Year\n");
+    else if (year % 4 == 0)
+        printf("Leap Year\n");
+    else
+        printf("Not a Leap Year\n");
+
+    return 0;
+}
+
+SAMPLE OUTPUT:
+Enter year: 2024
+Leap Year
+
+
+Q14. Check Vowel or Consonant
+------------------------------------------------------------
+CODE:
+#include <stdio.h>
+
+int main() {
+    char ch;
+
+    printf("Enter an alphabet: ");
+    scanf(" %c", &ch);
+
+    if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' ||
+        ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U')
+        printf("Vowel\n");
+    else
+        printf("Consonant\n");
+
+    return 0;
+}
+
+SAMPLE OUTPUT:
+Enter an alphabet: E
+Vowel
