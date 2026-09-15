@@ -1,8 +1,6 @@
-DAY 23 - BCA Semester 1 C Programming
-Simple Code + Sample Output
 
 Q45. Sum of Series: 2/3 + 4/7 + 6/11 + 8/15 + ... up to n Terms
-------------------------------------------------------------
+
 CODE:
 #include <stdio.h>
 
@@ -26,7 +24,7 @@ Sum = 2.2317
 
 
 Q46. Print 5 x 5 Star Pattern
-------------------------------------------------------------
+
 CODE:
 #include <stdio.h>
 
