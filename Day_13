@@ -1,8 +1,6 @@
-DAY 13 - BCA Semester 1 C Programming
-Simple Code + Sample Output
 
 Q25. Basic Calculator using Switch-Case
-------------------------------------------------------------
+
 CODE:
 #include <stdio.h>
 
@@ -41,7 +39,7 @@ Result = 2
 
 
 Q26. Print Numbers from 1 to n
-------------------------------------------------------------
+
 CODE:
 #include <stdio.h>
 
