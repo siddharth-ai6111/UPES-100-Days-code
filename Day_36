@@ -1,8 +1,6 @@
-DAY 36 - BCA Semester 1 C Programming
-Simple Code + Sample Output
 
 Q71. Read and Print a Matrix
-------------------------------------------------------------
+
 CODE:
 #include <stdio.h>
 
@@ -39,7 +37,7 @@ Matrix:
 
 
 Q72. Find Sum of All Elements in a Matrix
-------------------------------------------------------------
+
 CODE:
 #include <stdio.h>
 
